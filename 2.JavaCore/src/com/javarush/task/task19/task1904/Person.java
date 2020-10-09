@@ -2,6 +2,8 @@ package com.javarush.task.task19.task1904;
 
 import java.util.Date;
 
+//Just add comment for testing Git
+
 public class Person {
     private String firstName;
     private String middleName;

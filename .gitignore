@@ -12,6 +12,7 @@ target/
 *.class
 *.info
 *.properties
+*.jar
 out.log
 
 /1.JavaSyntax/
