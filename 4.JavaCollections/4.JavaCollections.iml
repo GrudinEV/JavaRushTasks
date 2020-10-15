@@ -72,5 +72,8 @@
     </orderEntry>
     <orderEntry type="library" name="org.slf4j:slf4j-api:1.7.23" level="application" />
     <orderEntry type="library" name="org.slf4j:slf4j-simple:1.7.23" level="application" />
+    <orderEntry type="library" name="jackson-annotations-2.11.1" level="application" />
+    <orderEntry type="library" name="activation-1.1.1" level="application" />
+    <orderEntry type="library" name="com.sun.xml.txw2:txw2:20110809" level="application" />
   </component>
 </module>
