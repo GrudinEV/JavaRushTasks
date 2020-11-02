@@ -1,6 +1,6 @@
 package com.javarush.task.task33.task3310;
 
-import com.javarush.task.task33.task3310.strategy.FileBucket;
+import com.javarush.task.task33.task3310.strategy.FileStorageStrategy;
 import com.javarush.task.task33.task3310.strategy.HashMapStorageStrategy;
 import com.javarush.task.task33.task3310.strategy.OurHashMapStorageStrategy;
 import com.javarush.task.task33.task3310.strategy.StorageStrategy;
@@ -38,6 +38,7 @@ public class Solution {
 
         Long timeStart = new Date().getTime();
         Set<Long> setIds = getIds(shortener, setGeneratingStrings);
+        System.out.println(setIds);
         Long timeEnd = new Date().getTime();
         Long timeGettingIds = timeEnd - timeStart;
         Helper.printMessage(timeGettingIds + "");
@@ -51,14 +52,14 @@ public class Solution {
         if (setGettingStrings.equals(setGeneratingStrings)) {
             Helper.printMessage("Тест пройден.");
         } else {
-            Helper.printMessage("Тест не пройден.");
+            Helper.printMessage("Тест не пройден. Сгенерировано строк - " + setGeneratingStrings.size() + ". Размещено в хранилище записей - " + setIds.size() + ". Возвращено строк по ID - " + setGettingStrings.size() + ".");
         }
     }
 
     public static void main(String[] args) {
-//        System.gc();
-//        testStrategy(new HashMapStorageStrategy(), 10000);
-//        testStrategy(new OurHashMapStorageStrategy(), 10000);
-        FileBucket fileBucket = new FileBucket();
+        System.gc();
+//        testStrategy(new HashMapStorageStrategy(), 100);
+//        testStrategy(new OurHashMapStorageStrategy(), 100);
+        testStrategy(new FileStorageStrategy(), 30);
     }
 }
