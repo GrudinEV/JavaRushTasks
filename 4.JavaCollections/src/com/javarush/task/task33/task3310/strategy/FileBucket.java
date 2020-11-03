@@ -34,9 +34,6 @@ public class FileBucket {
             oos.writeUTF(entry.getValue());
             oos.writeInt(entry.hash);
             oos.writeObject(entry.next);
-            if (entry.next != null) {
-                putEntry(entry.next);
-            }
         } catch (IOException e) {
             e.printStackTrace();
         }
