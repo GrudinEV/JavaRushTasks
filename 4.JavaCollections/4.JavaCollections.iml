@@ -75,8 +75,9 @@
     <orderEntry type="library" name="jackson-annotations-2.11.1" level="application" />
     <orderEntry type="library" name="activation-1.1.1" level="application" />
     <orderEntry type="library" name="com.sun.xml.txw2:txw2:20110809" level="application" />
-    <orderEntry type="library" name="com.google.guava:guava:18.0" level="application" />
     <orderEntry type="library" name="org.apache.commons:commons-collections4:4.0" level="application" />
+    <orderEntry type="library" name="org.apache.commons:commons-collections4:4.4" level="application" />
+    <orderEntry type="library" name="com.google.guava:guava:18.0" level="application" />
     <orderEntry type="library" name="junit:junit:4.13" level="application" />
   </component>
 </module>
