@@ -4,6 +4,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
+import java.util.function.Consumer;
 
 /* 
 Круговой итератор
@@ -26,16 +27,16 @@ public class Solution<T> extends ArrayList<T> {
             }
         }
 
-        System.out.println("\n---------****---------");
-        Iterator iterator = list.iterator();
-        count = 0;
-        for (int i = 0; i < 10; i++) {
-            System.out.print(iterator.next() + " ");
-            count++;
-            if (count == 6) {
-                iterator.remove();
-            }
-        }
+//        System.out.println("\n---------****---------");
+//        Iterator iterator = list.iterator();
+//        count = 0;
+//        for (int i = 0; i < 10; i++) {
+//            System.out.print(iterator.next() + " ");
+//            count++;
+//            if (count == 6) {
+//                iterator.remove();
+//            }
+//        }
     }
 
     @Override
@@ -58,7 +59,22 @@ public class Solution<T> extends ArrayList<T> {
         @Override
         public T next() {
             T t = iter.next();
+            correctionCursorPosition();
+            return t;
+        }
 
+        @Override
+        public void remove() {
+            iter.remove();
+            correctionCursorPosition();
+        }
+
+        @Override
+        public void forEachRemaining(Consumer<? super T> action) {
+            iter.forEachRemaining(action);
+        }
+
+        private void correctionCursorPosition() {
             Class<?> clazz = iter.getClass();
             Field fieldCursor = null;
             try {
@@ -82,12 +98,6 @@ public class Solution<T> extends ArrayList<T> {
                     }
                 }
             }
-            return t;
-        }
-
-        @Override
-        public void remove() {
-            iter.remove();
         }
     }
 }
