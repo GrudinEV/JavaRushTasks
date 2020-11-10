@@ -45,7 +45,7 @@ public class Solution<T> extends ArrayList<T> {
     }
 
     public class RoundIterator implements Iterator<T> {
-        private final Iterator<T> iter;
+        private Iterator<T> iter;
 
         RoundIterator(Iterator<T> iterator) {
             this.iter = iterator;
@@ -59,14 +59,18 @@ public class Solution<T> extends ArrayList<T> {
         @Override
         public T next() {
             T t = iter.next();
-            correctionCursorPosition();
+            if (!hasNext()) {
+                iter = iterator();
+            }
             return t;
         }
 
         @Override
         public void remove() {
             iter.remove();
-            correctionCursorPosition();
+            if (!hasNext()) {
+                iter = iterator();
+            }
         }
 
         @Override
@@ -74,30 +78,30 @@ public class Solution<T> extends ArrayList<T> {
             iter.forEachRemaining(action);
         }
 
-        private void correctionCursorPosition() {
-            Class<?> clazz = iter.getClass();
-            Field fieldCursor = null;
-            try {
-                fieldCursor = clazz.getDeclaredField("cursor");
-            } catch (NoSuchFieldException e) {
-                System.err.println("No such field: cursor!");
-            }
-            if (fieldCursor != null) {
-                fieldCursor.setAccessible(true);
-                int cursor = 0;
-                try {
-                    cursor = fieldCursor.getInt(iter);
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                }
-                if (cursor == size()) {
-                    try {
-                        fieldCursor.setInt(iter, 0);
-                    } catch (IllegalAccessException e) {
-                        System.out.println("Field cursor not change!");
-                    }
-                }
-            }
-        }
+//        private void correctionCursorPosition() {
+//            Class<?> clazz = iter.getClass();
+//            Field fieldCursor = null;
+//            try {
+//                fieldCursor = clazz.getDeclaredField("cursor");
+//            } catch (NoSuchFieldException e) {
+//                System.err.println("No such field: cursor!");
+//            }
+//            if (fieldCursor != null) {
+//                fieldCursor.setAccessible(true);
+//                int cursor = 0;
+//                try {
+//                    cursor = fieldCursor.getInt(iter);
+//                } catch (IllegalAccessException e) {
+//                    e.printStackTrace();
+//                }
+//                if (cursor == size()) {
+//                    try {
+//                        fieldCursor.setInt(iter, 0);
+//                    } catch (IllegalAccessException e) {
+//                        System.out.println("Field cursor not change!");
+//                    }
+//                }
+//            }
+//        }
     }
 }
