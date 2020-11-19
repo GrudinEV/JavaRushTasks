@@ -79,5 +79,7 @@
     <orderEntry type="library" name="org.apache.commons:commons-collections4:4.4" level="application" />
     <orderEntry type="library" name="com.google.guava:guava:18.0" level="application" />
     <orderEntry type="library" name="junit:junit:4.13" level="application" />
+    <orderEntry type="library" name="org.powermock:powermock-core:2.0.9" level="application" />
+    <orderEntry type="library" name="org.jsoup:jsoup:1.9.2" level="application" />
   </component>
 </module>
