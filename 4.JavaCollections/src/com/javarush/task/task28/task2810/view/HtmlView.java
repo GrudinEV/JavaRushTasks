@@ -6,10 +6,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.StringReader;
+import java.io.*;
 import java.util.List;
 
 public class HtmlView implements View{
@@ -31,11 +28,10 @@ public class HtmlView implements View{
     }
 
     public void userCitySelectEmulationMethod() {
-        controller.onCitySelect("middle");
+        controller.onCitySelect("пермь");
     }
 
     private String getUpdatedFileContent(List<Vacancy> vacancyList) {
-        System.out.println(vacancyList.size());
         Document doc = null;
         try {
             doc = getDocument();
@@ -48,7 +44,6 @@ public class HtmlView implements View{
                 Element vacancyInTemplate = templateCopy.clone();
                 Element title = vacancyInTemplate.getElementsByTag("a").first();
                 title.text(vacancy.getTitle());
-                System.out.println(vacancy.getTitle());
                 title.attr("href", vacancy.getUrl());
                 vacancyInTemplate.getElementsByAttributeValue("class", "city").first().text(vacancy.getCity());
                 vacancyInTemplate.getElementsByAttributeValue("class", "companyName").first().text(vacancy.getCompanyName());
@@ -64,13 +59,13 @@ public class HtmlView implements View{
 
     private void updateFile(String data) throws IOException {
         if (data != null) {
-            try (FileOutputStream fos = new FileOutputStream(filePath)){
-                StringReader sr = new StringReader(data);
+            try (PrintWriter pw = new PrintWriter(filePath, "UTF-8");
+                 StringReader sr = new StringReader(data)){
                 int b;
                 while ((b = sr.read()) > -1) {
-                    fos.write(b);
+                    pw.write(b);
                 }
-                fos.flush();
+                pw.flush();
             }
         }
     }
