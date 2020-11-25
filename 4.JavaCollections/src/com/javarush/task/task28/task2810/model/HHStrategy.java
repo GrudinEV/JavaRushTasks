@@ -85,7 +85,7 @@ public class HHStrategy implements Strategy{
 
     protected Document getDocument(String searchString, int page) throws IOException{
         searchString = String.format(URL_FORMAT, URLEncoder.encode(searchString, "UTF-8"), page);
-        Connection connection = Jsoup.connect(searchString).userAgent("Chrome/86.0.4240.198").referrer("");
+        Connection connection = Jsoup.connect(searchString).userAgent("Mozilla/5.0 (jsoup)").referrer("");
         return connection.get();
     }
 }
