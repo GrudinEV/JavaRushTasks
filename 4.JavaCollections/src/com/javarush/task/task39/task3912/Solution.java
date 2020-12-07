@@ -4,43 +4,49 @@ package com.javarush.task.task39.task3912;
 Максимальная площадь
 */
 
+
+import java.util.Date;
+
 public class Solution {
+
     public static void main(String[] args) {
-        int square = maxSquare(new int[][]{{1, 0, 1, 1, 1},
-                              {1, 0, 1, 1, 1},
-                              {0, 0, 1, 1, 1},
-                              {1, 1, 1, 0, 1},
-                              {0, 1, 1, 0, 1}});
-        System.out.println(square);
+        int[][] matrix = new int[10000][10000];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                matrix[i][j] = (int) (Math.random() * 2);
+            }
+        }
+        Date dateStart = new Date();
+        System.out.println(maxSquare(matrix));
+        Date dateEnd = new Date();
+        System.out.println(dateEnd.getTime() - dateStart.getTime());
     }
 
     public static int maxSquare(int[][] matrix) {
-        int countOnes = 0;
-        int height = matrix.length;
-        int width = matrix[0].length;
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
-                countOnes += matrix[i][j];
-            }
-        }
-        if (countOnes == width * height) {
-            return countOnes;
-        }
-        int maxCountOnes = 0;
-        int maxSideOfSquare = Math.min(Math.min(matrix.length, matrix[0].length), (int) Math.sqrt(countOnes));
-        for (int i = 0; i < height - maxSideOfSquare; i++) {
-            for (int j = 0; j < width - maxSideOfSquare; j++) {
-                int miniMatrix[][] = new int[maxSideOfSquare][maxSideOfSquare];
-                for (int m = 0; m < maxSideOfSquare; m++) {
-                    for (int n = 0; n < maxSideOfSquare; n++) {
-                        miniMatrix[m][n] = matrix[i + m][j + n];
+        int maxSideSquare = 0;
+        for (int i = 0; i < matrix.length - maxSideSquare; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == 1) {
+                    if (maxSideSquare == 0) {
+                        maxSideSquare = 1;
+                    }
+                    for (int dx = maxSideSquare; dx < Math.min(matrix.length - i, matrix[0].length - j); dx++) {
+                        int countOnes = 0;
+                        for (int m = i; m <= i + dx; m++) {
+                            for (int n = j; n <= j + dx; n++) {
+                                countOnes += matrix[m][n];
+                            }
+                        }
+                        if ((countOnes == (dx + 1) * (dx + 1)) && ((dx + 1) > maxSideSquare)) {
+                            maxSideSquare = dx + 1;
+                        }
+                        if (countOnes < (dx + 1) * (dx + 1)) {
+                            break;
+                        }
                     }
                 }
-                int square = maxSquare(miniMatrix);
-                maxCountOnes = Math.max(maxCountOnes, square);
             }
         }
-//        System.out.println(maxSideOfSquare);
-        return maxCountOnes;
+        return maxSideSquare * maxSideSquare;
     }
 }
