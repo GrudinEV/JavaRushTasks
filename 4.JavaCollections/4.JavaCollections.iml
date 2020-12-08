@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Java Libraries/JAXB/jaxb-api-2.3.1.jar!/" />
+          <root url="jar://D:/Java Libraries/JAXB/jaxb-api-2.3.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Java Libraries/Jackson/jackson-annotations-2.11.1.jar!/" />
+          <root url="jar://D:/Java Libraries/Jackson/jackson-annotations-2.11.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Java Libraries/Jackson/jackson-core-2.11.1.jar!/" />
+          <root url="jar://D:/Java Libraries/Jackson/jackson-core-2.11.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,7 +37,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Java Libraries/Jackson/jackson-databind-2.11.1.jar!/" />
+          <root url="jar://D:/Java Libraries/Jackson/jackson-databind-2.11.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -46,7 +46,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Java Libraries/JAXB/javax.activation-api-1.2.0.jar!/" />
+          <root url="jar://D:/Java Libraries/JAXB/javax.activation-api-1.2.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -55,7 +55,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Java Libraries/JAXB/jaxb-core-2.3.0.jar!/" />
+          <root url="jar://D:/Java Libraries/JAXB/jaxb-core-2.3.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -64,7 +64,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Java Libraries/JAXB/jaxb-impl-2.3.0.jar!/" />
+          <root url="jar://D:/Java Libraries/JAXB/jaxb-impl-2.3.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -74,13 +74,18 @@
     <orderEntry type="library" name="org.slf4j:slf4j-simple:1.7.23" level="application" />
     <orderEntry type="library" name="jackson-annotations-2.11.1" level="application" />
     <orderEntry type="library" name="activation-1.1.1" level="application" />
-    <orderEntry type="library" name="com.sun.xml.txw2:txw2:20110809" level="application" />
     <orderEntry type="library" name="org.apache.commons:commons-collections4:4.0" level="application" />
-    <orderEntry type="library" name="org.apache.commons:commons-collections4:4.4" level="application" />
-    <orderEntry type="library" name="com.google.guava:guava:18.0" level="application" />
     <orderEntry type="library" name="junit:junit:4.13" level="application" />
     <orderEntry type="library" name="org.powermock:powermock-core:2.0.9" level="application" />
-    <orderEntry type="library" name="org.jsoup:jsoup:1.9.2" level="application" />
     <orderEntry type="library" name="org.powermock:powermock-core:1.4.10" level="application" />
+    <orderEntry type="library" name="org.jsoup:jsoup:1.9.2" level="application" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.0.6" level="application" />
+    <orderEntry type="library" name="javax.xml.bind:jaxb-api:2.3.1" level="application" />
+    <orderEntry type="library" name="com.sun.xml.txw2:txw2:20110809" level="application" />
+    <orderEntry type="library" name="org.apache.commons:commons-collections4:4.4" level="application" />
+    <orderEntry type="library" name="com.google.guava:guava:18.0" level="application" />
+    <orderEntry type="library" name="org.junit:junit4-engine:5.0.0-ALPHA" level="application" />
+    <orderEntry type="library" name="org.slf4j:slf4j-log4j12:1.7.12" level="application" />
+    <orderEntry type="library" name="org.powermock:powermock-classloading:1.4.6" level="application" />
   </component>
 </module>
