@@ -79,13 +79,13 @@
     <orderEntry type="library" name="org.powermock:powermock-core:2.0.9" level="application" />
     <orderEntry type="library" name="org.powermock:powermock-core:1.4.10" level="application" />
     <orderEntry type="library" name="org.jsoup:jsoup:1.9.2" level="application" />
-    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.0.6" level="application" />
-    <orderEntry type="library" name="javax.xml.bind:jaxb-api:2.3.1" level="application" />
-    <orderEntry type="library" name="com.sun.xml.txw2:txw2:20110809" level="application" />
     <orderEntry type="library" name="org.apache.commons:commons-collections4:4.4" level="application" />
     <orderEntry type="library" name="com.google.guava:guava:18.0" level="application" />
     <orderEntry type="library" name="org.junit:junit4-engine:5.0.0-ALPHA" level="application" />
     <orderEntry type="library" name="org.slf4j:slf4j-log4j12:1.7.12" level="application" />
     <orderEntry type="library" name="org.powermock:powermock-classloading:1.4.6" level="application" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.0.6" level="application" />
+    <orderEntry type="library" name="javax.xml.bind:jaxb-api:2.3.1" level="application" />
+    <orderEntry type="library" name="com.sun.xml.txw2:txw2:20110809" level="application" />
   </component>
 </module>
