@@ -5,10 +5,12 @@ import com.javarush.task.task26.task2613.exception.InterruptOperationException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
 public class ConsoleHelper {
     private static BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
+    private static ResourceBundle res = ResourceBundle.getBundle(CashMachine.RESOURCE_PATH + "common");
 
     public static void writeMessage(String message) {
         System.out.println(message);
@@ -28,36 +30,44 @@ public class ConsoleHelper {
     }
 
     public static String askCurrencyCode() throws InterruptOperationException{
-        writeMessage("Insert please currency code.");
+        writeMessage(res.getString("choose.currency.code"));
         while (true) {
             String currencyCode = readString();
             if (currencyCode.length() == 3) {
                 return currencyCode.toUpperCase();
             }
-            writeMessage("You inserted incorrect data! Insert please correct currency code.");
+            writeMessage(res.getString("invalid.data"));
         }
     }
 
     public static String[] getValidTwoDigits(String currencyCode) throws InterruptOperationException{
-        writeMessage("Insert please denomination and count.");
+        writeMessage(res.getString("choose.denomination.and.count.format"));
         while (true) {
             String twoDigits = readString().trim().replaceAll("\\s+", " ");
             if (Pattern.matches("\\d+\\s\\d+", twoDigits)) {
                 return twoDigits.split("\\s");
             }
-            writeMessage("You inserted incorrect denomination and count! Re-enter please.");
+            writeMessage(res.getString("invalid.data"));
         }
     }
 
     public static Operation askOperation() throws InterruptOperationException{
-        writeMessage("Insert please number of operation (1 - INFO, 2 - DEPOSIT, 3 - WITHDRAW, 4 - EXIT).");
+        writeMessage(res.getString("choose.operation"));
+        writeMessage("1 - " + res.getString("operation.INFO"));
+        writeMessage("2 - " + res.getString("operation.DEPOSIT"));
+        writeMessage("3 - " + res.getString("operation.WITHDRAW"));
+        writeMessage("4 - " + res.getString("operation.EXIT"));
         while (true) {
             try {
                 int numberOperations = Integer.parseInt(readString());
                 return Operation.getAllowableOperationByOrdinal(numberOperations);
             } catch (IllegalArgumentException e) {
-                writeMessage("You inserted incorrect number of operation! Re-enter please(1 - INFO, 2 - DEPOSIT, 3 - WITHDRAW, 4 - EXIT).");
+                writeMessage(res.getString("invalid.data"));
             }
         }
+    }
+
+    public static void printExitMessage() {
+        writeMessage(res.getString("the.end"));
     }
 }

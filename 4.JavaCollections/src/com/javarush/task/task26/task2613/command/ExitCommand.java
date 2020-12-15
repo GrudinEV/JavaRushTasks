@@ -1,15 +1,19 @@
 package com.javarush.task.task26.task2613.command;
 
+import com.javarush.task.task26.task2613.CashMachine;
 import com.javarush.task.task26.task2613.ConsoleHelper;
 import com.javarush.task.task26.task2613.exception.InterruptOperationException;
 
+import java.util.ResourceBundle;
+
 class ExitCommand implements Command{
+    private ResourceBundle res = ResourceBundle.getBundle(CashMachine.RESOURCE_PATH + "exit");
     @Override
     public void execute() throws InterruptOperationException {
-        ConsoleHelper.writeMessage("Can you exit? (y/n)");
+        ConsoleHelper.writeMessage(res.getString("exit.question.y.n"));
         String answerExit = ConsoleHelper.readString();
         if (answerExit.toLowerCase().equals("y")) {
-            ConsoleHelper.writeMessage("Good bye!!!");
+            ConsoleHelper.writeMessage(res.getString("thank.message"));
         }
     }
 }
