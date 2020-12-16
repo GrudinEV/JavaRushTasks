@@ -87,5 +87,7 @@
     <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.0.6" level="application" />
     <orderEntry type="library" name="javax.xml.bind:jaxb-api:2.3.1" level="application" />
     <orderEntry type="library" name="com.sun.xml.txw2:txw2:20110809" level="application" />
+    <orderEntry type="library" name="org.apache.directory.studio:org.apache.httpcomponents.httpcore:4.1.2" level="application" />
+    <orderEntry type="library" name="org.apache.httpcomponents:httpclient:4.5.13" level="application" />
   </component>
 </module>
