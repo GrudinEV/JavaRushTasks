@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2020-06-07 20:50:54 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
 2020-06-07 20:51:54 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
 2020-06-07 20:52:54 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
@@ -35871,6 +35872,9 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 13 more
 2021-01-28 21:54:53 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+=======
+2021-02-24 15:44:37 INFO  AnalyticsService.run(84) - Error while sending analyticsMessage to log-stash
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
 org.apache.http.conn.HttpHostConnectException: Connect to test.javarush.ru:443 [test.javarush.ru/18.197.44.80] failed: Connection timed out: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
@@ -35897,6 +35901,7 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 13 more
+<<<<<<< HEAD
 2021-01-28 21:55:10 INFO  ApacheHttpClient.sendEvent(535) - responseCode = 200
 2021-01-28 21:56:04 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
 
@@ -35962,3 +35967,5 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 2021-09-11 10:15:42 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
 
 2021-09-11 10:15:42 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+=======
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5

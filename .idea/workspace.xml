@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
@@ -9,6 +10,28 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaRushPlugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JavaRushPlugin.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaRushTasks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaRushTasks.iml" afterDir="false" />
+=======
+    <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="Resolved Game Road part 23">
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/ProgressBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/ShapeMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/SpaceInvadersGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/Boss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/Bullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/EnemyFleet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/EnemyShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/PlayerShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/Star.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/Условие.jrtc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/FinishLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/FinishLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Условие.jrtc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaRushPlugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JavaRushPlugin.properties" afterDir="false" />
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
       <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +48,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="AnnotationType" />
+=======
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
@@ -61,6 +87,7 @@
     <property name="extract.method.default.visibility" value="packageLocal" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java Libraries/JAXB/jaxb-impl-2.3.0.jar!/" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -68,6 +95,14 @@
     <property name="project.structure.side.proportion" value="0.3637455" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/8.Games/lib/javafx-sdk-12.0.2/lib" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -91,7 +126,11 @@
       <recent name="D:\intellijSandbox\JavaRushTasks" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Controller">
+=======
+  <component name="RunManager" selected="Application.SpaceInvadersGame">
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -323,6 +362,7 @@
     <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.task.task34.task3410.controller.Controller" />
       <module name="4.JavaCollections" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -397,6 +437,12 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.javarush.task.task40.task4012.*" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.task.task34.task3410.controller.*" />
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -404,6 +450,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Solution (7)" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.task.task32.task3210.Solution" />
       <module name="4.JavaCollections" />
@@ -411,6 +458,14 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.javarush.task.task32.task3210.*" />
+=======
+    <configuration name="Game2048" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.game2048.Game2048" />
+      <module name="8.Games" />
+      <option name="VM_PARAMETERS" value="--module-path D:\Programming\JavaRushTasks\8.Games\lib\javafx-sdk-12.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.games.game2048.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -418,6 +473,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MoonLanderGame" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.moonlander.MoonLanderGame" />
+      <module name="8.Games" />
+      <option name="VM_PARAMETERS" value="--module-path D:\Programming\JavaRushTasks\8.Games\lib\javafx-sdk-12.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.games.moonlander.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RacerGame" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.racer.RacerGame" />
+      <module name="8.Games" />
+      <option name="VM_PARAMETERS" value="--module-path D:\Programming\JavaRushTasks\8.Games\lib\javafx-sdk-12.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.games.racer.*" />
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
     <configuration name="Solution (8)" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.task.task36.task3605.Solution" />
       <module name="4.JavaCollections" />
@@ -425,6 +510,43 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.javarush.task.task36.task3605.*" />
+=======
+    <configuration name="SnakeGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.snake.SnakeGame" />
+      <module name="8.Games" />
+      <option name="VM_PARAMETERS" value="--module-path D:\Programming\JavaRushTasks\8.Games\lib\javafx-sdk-12.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.games.snake.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.task.task36.task3606.Solution" />
+      <module name="4.JavaCollections" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.task.task36.task3606.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpaceInvadersGame" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.spaceinvaders.SpaceInvadersGame" />
+      <module name="8.Games" />
+      <option name="VM_PARAMETERS" value="--module-path D:\Programming\JavaRushTasks\8.Games\lib\javafx-sdk-12.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.games.spaceinvaders.*" />
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -460,6 +582,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -467,6 +590,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <option name="vmParameters" />
@@ -520,6 +645,7 @@
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Application.Solution (1)" />
       <item itemvalue="Application.Solution (2)" />
       <item itemvalue="Application.Solution (7)" />
@@ -538,6 +664,24 @@
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Solution (5)" />
         <item itemvalue="Application.Solution (4)" />
+=======
+      <item itemvalue="Application.MoonLanderGame" />
+      <item itemvalue="Application.RacerGame" />
+      <item itemvalue="Application.Controller" />
+      <item itemvalue="Application.SnakeGame" />
+      <item itemvalue="Application.Solution (1)" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Game2048" />
+      <item itemvalue="Application.SpaceInvadersGame" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SnakeGame" />
+        <item itemvalue="Application.Game2048" />
+        <item itemvalue="Application.Solution (1)" />
+        <item itemvalue="Application.Controller" />
+        <item itemvalue="Application.Test" />
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
       </list>
     </recent_temporary>
   </component>
@@ -586,6 +730,35 @@
       <workItem from="1485162014696" duration="83000" />
       <workItem from="1485177835943" duration="100000" />
     </task>
+    <task id="LOCAL-00001" summary="Resolved task 3410 part 8">
+      <created>1611924499821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611924499821</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Resolved task 3410 part 14">
+      <created>1612267947219</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612267947219</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Resolved task 3410">
+      <created>1612502934684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612502934684</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Resolved Game Road part 23">
+      <created>1613133259897</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613133259897</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -602,6 +775,7 @@
       <collection />
     </option>
   </component>
+<<<<<<< HEAD
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -640,6 +814,18 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JavaRushTasks$Solution.ic" NAME="Solution Coverage Results" MODIFIED="1584861575804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.javarush.task.task17.task1710.*</FILTER>
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Resolved task 3410 part 8" />
+    <MESSAGE value="Resolved task 3410 part 14" />
+    <MESSAGE value="Resolved task 3410" />
+    <MESSAGE value="Resolved Game Road part 23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved Game Road part 23" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaRushTasks$SnakeGame.ic" NAME="SnakeGame Coverage Results" MODIFIED="1614148258638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.javarush.games.snake.*</FILTER>
+>>>>>>> 666d871667747d3f67175aa73517523e3a1a6cc5
     </SUITE>
   </component>
 </project>

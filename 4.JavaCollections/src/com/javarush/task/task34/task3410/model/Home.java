@@ -12,6 +12,6 @@ public class Home extends GameObject {
     @Override
     public void draw(Graphics graphics) {
         graphics.setColor(Color.RED);
-        graphics.drawOval(this.getX(), this.getY(), this.getWidth(), this.getHeight());
+        graphics.drawOval(this.getX() + (Model.FIELD_CELL_SIZE - width) / 2, this.getY() + (Model.FIELD_CELL_SIZE - height) / 2, this.getWidth(), this.getHeight());
     }
 }
